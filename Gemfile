@@ -26,7 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # specific for this project
 gem 'devise'
 gem 'milia'
-# Use ActiveModel has_secure_password
+gem 'twitter-bootstrap-rails'
+#gem 'devise-bootstrap-views'
+gem 'devise-bootstrap-views', '~> 1.0'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
