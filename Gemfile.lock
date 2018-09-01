@@ -202,7 +202,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
-  devise-bootstrap-views (~> 1.0)
+  devise-bootstrap-views
   jbuilder (~> 2.0)
   jquery-rails
   milia

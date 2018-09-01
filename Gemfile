@@ -28,7 +28,7 @@ gem 'devise'
 gem 'milia'
 gem 'twitter-bootstrap-rails'
 #gem 'devise-bootstrap-views'
-gem 'devise-bootstrap-views', '~> 1.0'
+gem 'devise-bootstrap-views'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
