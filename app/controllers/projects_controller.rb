@@ -54,7 +54,7 @@ class ProjectsController < ApplicationController
   def destroy
     @project.destroy
     respond_to do |format|
-      format.html { redirect_to rrot_url, notice: 'Project was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: 'Project was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -71,13 +71,14 @@ class ProjectsController < ApplicationController
     end
     
     def set_tenant
-      @tenant = Tenant.find(params [:tenant])
+      @tenant = Tenant.find(params[:tenant_id])
     end
     
+  
     def verify_tenant
       unless params[:tenant_id] == Tenant.current_tenant_id.to_s
-      redirect_to :root,
-            flash: {error: 'You are not authourised to access any organisation other than your own'}
+        redirect_to :root, flash: { error: 'You are not authorized to access this organization.' }
       end
     end
+      
 end

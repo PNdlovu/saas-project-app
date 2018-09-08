@@ -6,6 +6,7 @@ class Tenant < ActiveRecord::Base
  
  def can_create_projects?
    (plan == 'free' && projects.count < 1) || (plan == 'premium')
+ end
  
  validates_presence_of :name
  validates_uniqueness_of :name
